@@ -1,0 +1,1 @@
+{"name":"Local: factorialusingrecursion","url":"x:\\Code\\C++\\Recursions\\factorialusingrecursion.cpp","tests":[{"id":1677565678014,"input":"5","output":"120 \n120"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"x:\\Code\\C++\\Recursions\\factorialusingrecursion.cpp","group":"local","local":true}

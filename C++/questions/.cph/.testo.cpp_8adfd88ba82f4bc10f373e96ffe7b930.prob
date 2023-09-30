@@ -1,0 +1,1 @@
+{"name":"Local: testo","url":"c:\\Users\\gyan_\\OneDrive\\PC\\Documents\\Code\\C++\\questions\\testo.cpp","tests":[{"id":1692441657281,"input":"4 1\n3 10 2 9\n12","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\gyan_\\OneDrive\\PC\\Documents\\Code\\C++\\questions\\testo.cpp","group":"local","local":true}
