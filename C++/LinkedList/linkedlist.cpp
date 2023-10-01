@@ -59,7 +59,7 @@ int main(){
     insertnd(head, 3);
     insertnd(head,4);
 
-    cout<<"hell;
+    cout<<"hell";
 
 
     display(head);

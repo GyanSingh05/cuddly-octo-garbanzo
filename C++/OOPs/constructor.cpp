@@ -38,10 +38,10 @@ int main()
 {
 
    hero saitama;
-   saitama.setname("saitama");
+   saitama.setname("saitama sensei");
    saitama.setclass('c');
     cout<< saitama.getname() << endl << saitama.getclass()<<endl;
-    saitama.setname("genos");
+    saitama.setname("genos kun");
     saitama.setclass('s');
     cout<< saitama.getname() << endl << saitama.getclass()<<endl;
     hero bang(saitama);
