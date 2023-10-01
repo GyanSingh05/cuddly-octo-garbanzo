@@ -5,6 +5,6 @@ for i in range(int(n)):
     array.append(number)
 
 for i in range(int(n)):
-    print(array[i],end='/// ')
+    print(array[i],end=' ')
 
 
