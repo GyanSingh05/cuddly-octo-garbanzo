@@ -11,13 +11,45 @@ class node{
     }
 
 };
+void insert(node* &head,int val){
+    node* n = new node(val);
+    node*temp=head;
+    if(head==NULL){
+
+        head=n;
+        return;
+    }
+
+    while(temp->next!=NULL){
+        temp=temp->next;
+        
+    }
+    temp->next=n;
+}
+void display(node*head){
+    node*temp = head;
+    while(temp!=NULL){
+        
+
+        cout<<temp->data;
+    
+        temp=temp->next;
+        cout<<"->";
+    }
+    cout<<"NULL";
+    return;
+}
 int main()
 {
 
-    node first(10);
-    cout<<first.data;
-    cout<<endl;
-    cout<<first.next; 
+    node *head=NULL;
+    insert(head,1);
+    insert(head,2);
+    insert(head,3);
+    display(head);
+    // cout<<first.data;
+    // cout<<endl;
+    // cout<<first.next; 
 
 
 
