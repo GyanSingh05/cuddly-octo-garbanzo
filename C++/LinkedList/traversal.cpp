@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-
 class node{
     public:
 
@@ -35,50 +34,40 @@ void display(node*head){
     }
     cout<<"NULL";
 }
+void traversal(node*head){
+    node*temp=head;
+    int i=0;
+    
+    while(temp->next!=NULL){
+        
+        cout<<temp->data<<" is the "<<i<<"th index in this linked list"<<endl;
+        i++;
 
-
-
-
-void reversek(node*&head, int k){
-   
-    node* previous=NULL;
-    node* current=head;
-    node* nexto=current->next;
-
-    while(current!=NULL){
-
-        ;
-
+        
+        temp=temp->next;
     }
 
-
-
-
 }
-
-
-
-
 
 int main()
 {
+    node*head = new node(0);
 
+    insertatend(head,1);
 
-// reversing every k nodes in a linked list 
+    insertatend(head,2);
 
-   node*head= new node(2);
-   insertatend(head,1);
-   insertatend(head,4);
-   insertatend(head,3);
-   insertatend(head,6);
-   insertatend(head,5);
-   display(head);
-   cout<<endl;
-   display(head);
+    insertatend(head,3);
+
+    insertatend(head,4);
+
+    insertatend(head,5);
+
+    insertatend(head,6);
+
+    display(head);
+    cout<<endl;
+    traversal(head);
 
    return 0;
 }
-
-
-
-
