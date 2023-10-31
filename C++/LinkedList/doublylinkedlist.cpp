@@ -70,20 +70,31 @@ void removeentry(node*&head, int a){
 
 }
 void insertat(node*&head, int pos, int val){
+   
    node*n= new node(val);
    node*temp= head;
    int counter=1;
+   if(counter==pos){
+      insertathead(head,val);
+      return;
+   }
    while(counter<pos){
+      if(temp->next==NULL){
+
+         insertatend(head,val);
+         return;
+      }
       temp=temp->next;
       counter++;
-
    }
    
    node*prevo=temp->prev;
    node*nexto=temp;
-   n->prev=prevo;
+   
    n->next=nexto;
-   cout<<"inserted";
+   nexto->prev=n;
+   prevo->next=n;
+
 }
 int main(){
 
@@ -116,7 +127,8 @@ int main(){
 
 
 
-   insertat(head,2,15);
+   insertat(head,6,15);
+   insertat(head,1,99);
    display(head);
    cout<<endl<<endl;
 
