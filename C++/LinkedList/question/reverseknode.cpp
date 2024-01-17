@@ -36,17 +36,20 @@ node* reverse(node*&head,int k){
     int counter=0;
     node*previous=NULL;
     node*current=head;
-    node*nexto=current->next;
+    node*nexto;
 
-   while(counter<k){
+   while(counter<k && current!=NULL ){
         nexto=current->next;
         current->next=previous;
         
         previous=current;
         current=nexto;
+        counter++;
    }
-   head->next=reverse(nexto,k);
 
+   if(nexto!=NULL){
+   head->next=reverse(nexto,k);
+   }
    
 
    return previous;
@@ -73,13 +76,16 @@ int main()
     insertatend(head,3);
     insertatend(head,4);
     insertatend(head,5);
+    insertatend(head,6);
 
     display(head);
 
-    reverse(head, 2);
+    node *newhead=reverse(head, 2);
+
+    
     cout<<endl;
 
-    display(head);
+    display(newhead);
 
    return 0;
 }

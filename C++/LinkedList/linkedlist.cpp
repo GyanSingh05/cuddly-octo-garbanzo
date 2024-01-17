@@ -17,6 +17,10 @@ node(int val){
     nextptr=NULL;
    
     }
+
+    int multiplier(int m){
+        return data*m-10;
+    }
 };
 void insertnd(node* &head,int val){                // only this help to join two nodes
 
@@ -56,10 +60,12 @@ int main(){
     node* head=NULL;
     insertnd(head,1);
     insertnd(head,2);
-    insertnd(head, 3);
+    insertnd(head,3);
     insertnd(head,4);
+    insertnd(head,5);
 
-    cout<<"hell";
+    cout<<head->multiplier(98)<<endl;
+
 
 
     display(head);
