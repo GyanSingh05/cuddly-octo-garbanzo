@@ -6,12 +6,12 @@ int main()
     int days;
     cin >> days;
 
-    bool stopper=true;
+    bool sToper=true;
     int years=0;
     int months=0;
     int weeks=0;
     
-    while(stopper){
+    while(sToper){
 
         if(days>=365){
             days=days-365;
@@ -26,7 +26,7 @@ int main()
             weeks++;
         }
         else if(days<7 && days>=0){
-            stopper=false;
+            sToper=false;
         }
 
     }
