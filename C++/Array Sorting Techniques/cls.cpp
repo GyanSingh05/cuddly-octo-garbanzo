@@ -1,40 +1,42 @@
-#include<thread>
-#include<iostream>
-#include<iostream>
-#include<chrono>
-
+#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
-int main()
-{
 
-    string org="hello world";
-    string main=" ";
-    char user;
-    for (int i = 0; i < 11; i++)
-    {
-        if(i==5){
-            main=main+' ';
-            continue;
-        }
-        for (int j = 97; j <= 122; j++)
-        {
-            this_thread::sleep_for(chrono::milliseconds(1));
-            user=j;
-            main=main+user;
-            cout<<main<<endl;
-            if(user==org[i]){
-                break;user='\0';
-            }
-            
-         main.pop_back();
-        }
-        
-    }
+int max(int a, int b , int c, int d){
     
+    int max=a;
+    
+    if (a>b){
+        max=a;
+    }
+    else{
+        max=b;
+    }
+     if(max<c){
+         max=c;
+     }
+     if(max<d){
+         
+         max=d;
+         
+     }
+     return max;
+}
 
-
-
-
-
-   return 0;
+int main(){
+    
+    
+    
+    
+    
+    int a,b,c,d;
+    
+    cin>>a>>b>>c>>d;
+    
+    cout<<max(a,b,c,d);
+    
+    
+    
+    
+    return 0;
 }
