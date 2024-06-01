@@ -39,7 +39,7 @@ class Calculator():
         self.top_frame.pack(side=tk.TOP,fill=tk.X)
 
         self.display= tk.Label(self.top_frame,text=self.displayed,bg="black",fg="white",font=("courier",20))
-        self.display.pack(side=tk.LEFT,fill=tk.BOTH)
+        self.display.pack(side=tk.RIGHT,fill=tk.BOTH)
 
 
 ###################NUMPAD####
